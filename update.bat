@@ -33,6 +33,16 @@ IF %ERRORLEVEL% NEQ 0 (
 echo 当前工作目录: %cd%
 echo.
 
+REM --- 新增代码: 写入随机数据以强制产生变更 ---
+echo 正在向文件中写入随机数据以触发更新...
+SET trigger_file="update_log.txt"
+SET random_content="Update triggered on %date% at %time%. Random ID: %RANDOM%"
+echo %random_content% > %trigger_file%
+echo 已更新文件: %trigger_file%
+echo.
+REM --- 新增代码结束 ---
+
+
 echo 正在添加所有文件到暂存区...
 git add .
 echo.
