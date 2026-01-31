@@ -7,7 +7,7 @@ REM 使用前请务必修改下面的 "repository_path" 为你的真实仓库路
 REM 例如: SET repository_path="D:\CyberTools\github_green"
 REM -----------------------------------------------------------------
 
-SET repository_path="D:\CyberTools\github_green"
+SET repository_path="D:\Program\_Portable\github_green"
 
 REM -----------------------------------------------------------------
 REM          --- 下面的代码通常无需修改 ---
